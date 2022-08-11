@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando Link Externo</h1>
+    <p>Acesse o meu <a href="https://github.com/Thiago-Vasconcelos-dev/projeto_html_css" target="_blank" rel="external"> repositorio publico de html e css para iniciantes no GitHub</a></p>
+    <!-- O comando target controla onde o site de destino vai abrir e combinado com o _blank, vai abrir o link em uma nova aba em branco, ou seja, leva para o proximo site sem fechar o seu-->
+    <!--O comando rel é novo no html5 e indica qual é a natureza do destino do link-->
+    <h2>Usando links intenros</h2>
+    <p>Este é um exemplo de link interno e você pode ir para a <a href="listas.html" target="_self" rel="next">pagina de listas</a> </p> <!--target _self, abre a npva pagina na mesma pagina, ideal para paginas do seu proprio site-->
+    <a href="terceira_pagina/emojis.html">Acesse a pagina de emojis </a>
+    <h1>Links para Download</h1>
+    <p>Baixe o documento de HTML5 da w3c Brasil</p>
+    <ul>
+        <li><a href="html5-web.pdf">Baixar arquivo em pdf</a></li>
+        <li><a href="html5-web.zip" download="html5-web.zip" type="application/zip">Arquivo em zip</a></li> <!--Para saber o media type de cada arquivo acesse https://www.iana.org/assignments/media-types/media-types.xhtml . No caso do pdf o proprio navegador abre automatico-->
+    </ul>
+</body>
+</html>
