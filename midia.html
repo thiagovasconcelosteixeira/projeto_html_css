@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos ou simplesmente aumente e diminua o tamno da pagina do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/acastro_google_350px.png" type="image/png">
+        <source media="(max-width: 1200px)" srcset="imagens/acastro_google_700px.png" type="image/png">
+        <img src="imagens/acastro_google_1200x800px.png" alt="imagem google acastro">
+    </picture><!--A tag <picture> concentra as outras fontes de imagem. Lembrando que existe uma ordem entre os <source>, e nessa nossa configuração, 
+        os itens mais acima sejam os menores tamanhos para media="(max-width: )"  e que os seguintes sejam maiores, de forma crescente. O último item dentro de <picture> deve ser a imagem padrão.-->
+
+     <h1>Reproduzir Áudio</h1>
+     <p>Reproduzir áudio em HTML5</p> 
+     <audio src="digital_media/Read All Over - Nathan Moore.mp3" controls autoplay></audio> 
+     <p>Para um Auto play, temos que utilizar alguns source também</p>    
+     <audio preload="metadata" controls autoplay loop>
+        <source src="digital_media/Read All Over - Nathan Moore.mp3" type="audio/mpeg">
+        <p>Caso o seu navegador nao suporte áudio <a href="digital_media/Read All Over - Nathan Moore.mp3" download="digital_media/Read All Over - Nathan Moore.mp3" type="audio/mpeg">baixe a musica clicando aqui</a></p>
+     </audio>
+     <h1>Video</h1>
+     <hr>
+     <h2>Inserindo vídeos hospedado localmente</h2> 
+     <p>Este vídeo está hospedado no própio servidor</p>
+     <video width="500" height="700" controls autoplay>
+        <source src="digital_media/6B22daf3.webm" type="video/webm">
+        <source src="digital_media/6B22daf3.m4v" type="video/mp4">
+        <source src="digital_media/6b22daf3.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+     </video><!--Os 3 source aqui são para três formatos do mesmo video, dessa forma, o navegador pode escolher o melhor formato para reprodução em todos os dispositivos-->
+     <h2>Inserindo video do youtube</h2>
+     <p>Você pode incorporar videos do yo , para isso basta ir no video que você quer, clicar em compartilhar e clicar em incorporar. Depois e so copiar o codigo e colar no seu proprio codigo.</p>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/QjMJsQx_O7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <p>A grande vantagem é que você pode usar videos de um servidor externo, no caso, o youtube, e assim voce diminui o gasto com hospedagem.</p>
+
+</body>
+</html>
