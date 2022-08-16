@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*
+em HTML é id = em CSS é # configura somente uma tag
+em HTML é class = em CSS é . configura varias tag
+*/
+body{
+    background-color: aquamarine;
+    font-family: arial, sans-serif;
+    
+}
+h1{
+    color: green;
+}
+h1#principal{
+    color: black;
+    text-align: center;
+}
+h2{
+    color: green;
+}
+.basico{
+    color: rgb(0, 56, 0);
+    text-align: center;
+    font-weight: bolder;
+}
+.avancado{
+    color: rgb(90, 95, 90);
+    text-align: center;
+    font-weight: bolder;
+}

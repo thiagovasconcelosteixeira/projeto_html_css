@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo de fontes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap'); /*podemos importar fontes do google fontes através do link fonts.google.com, procurar a fonte que deseja, e importar o código para dentro do style =. Depois no fonte family você escreve o nome da fonte que escolheu*/
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Rubik+Dirt&display=swap');
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /*
+            medida Absolutas
+            cm,mm,in,px,pt,pc
+
+            medidas relativas %
+            em(altura M), ex(altura x), rem, vw(largura da viewport), vh(altura da viewport) 
+            para o font-size recomenda-se usar px ou em.
+            16px geralmente=  1em
+            */
+            font-size: 16px;
+            text-align: left; /*alinhado a esquerda*/
+        }
+        h1{
+            font-family: 'Rubik Dirt', Arial, Helvetica, sans-serif;
+            font-size: 4em;
+            font-weight: 400; /*Peso da letra, que pode ser lighter normal  bold e bolder
+            ou por peso mesmo que vai de 100 - 900*/
+            font-style: normal; /*estilo itálico, normal e obliquo*/
+            text-align: center; /*alinhado no centro*/
+        }
+        h2{
+            /* Podemos definir a fonte usando um shorthand font, escrevendo tudo em uma linha seguindo a sequência - font-style -> font-weight -> font-size -> font-family*/
+            font: normal bolder 2em sans-serif;
+            text-align: right; /*alinhado a direita*/
+        }
+        p {
+            font: normal 500 1.5em 'Dancing Script', arial, helvetica, sans-serif;
+            text-align: justify; /*texto justificado*/
+            text-indent: 30px; /*recuo da primeira linha (indentar a linha)*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Título 1</h1>
+    <h2>Subtítulo 1.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sit beatae ut magnam quaerat non, deleniti esse ullam nulla saepe tempora, rem recusandae atque autem? Amet quos cumque itaque inventore.</p>
+    <h2>Subtítulo 1.2</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti id quo quas a facilis harum nisi debitis illum dolorum necessitatibus tenetur voluptatem dolores praesentium, odio optio nostrum perferendis ex. Ducimus?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At minima quibusdam consequatur porro incidunt fugiat illo error aliquam natus numquam. Architecto aliquid itaque corrupti accusantium iusto ipsa natus accusamus magnam!</p>
+    
+    
+</body>
+</html>
