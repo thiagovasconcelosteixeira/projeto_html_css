@@ -3,7 +3,17 @@
 /*
 em HTML é id = em CSS é # configura somente uma tag
 em HTML é class = em CSS é . configura varias tag
+
+RESUME Seletores personalizados
+#  = id
+.  = class
+:  = pseudo-class
+:: = pseudo-element
+>  = children
 */
+
+
+
 body{
     background-color: aquamarine;
     font-family: arial, sans-serif;
@@ -29,3 +39,52 @@ h2{
     text-align: center;
     font-weight: bolder;
 }
+
+div{
+    display: inline-block; /*deixa as divs uma do lado da outra*/
+    background-color: lightgray;
+    border: 1px solid black; /*shothand para criar uma borda ( largura, tipo e cor */
+    text-align: center;
+    height: 200px; /*altura da regiao da div*/
+    width: 200px; /*largura  da regiao da div*/
+
+}
+
+div:hover{
+    background-color: red;
+    color: gray;
+} /* Uma pseudo -classe especifica um estado especial de um elemento. A pseudo-classe :hover mostra um estado somente quando o mouse seja passado por cima, por exemplo*/
+
+div > p{
+    display: none;/*oculta o paragrafo p que e filho da div*/
+}/*esse seletor indica que p é filho da div, alterando somente o paragrafo dentro da dive=*/
+div:hover > p{
+    display: block; /*mostra o texto oculto */
+    color: beige;
+    background-color: black;
+}
+a{
+    color: red;
+    text-decoration: none;/*tira o sublinhado do link*/
+}
+a:visited{
+    color: darkred;
+}/*pseudo-classe que indica o estado da tag a quando for "visitada"*/
+a:hover{
+    color:black;
+    text-decoration: underline; /*sublinha o texto, e com essa pseudo-classe, o sublinhando aparece quando passa o mouse por cima*/
+}
+a:active{
+    color:blue;
+}/*pseudo-classe que mostra o estado do link quando for "ativado", ou seja, quando for clicado*/
+a::before{
+    content:'\021D2';
+    color: black;
+
+}
+a::after{ /*insere conteúdo depois ao link*/
+    content: '\021D0'; /*insere o conteúdo */
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+}/*aqui temos um pseudo-elemento que deve ser inserido com ::  e permite que voce formate um pedaço especifico do elemento referenciado*/
