@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --cor0: #084480;
+    --cor1: #1087FF;
+    --cor2: #5CADFF;
+    --cor3: #2E5780;
+    --cor4: #003366c9;
+    --cor5: #333333;
+    --fonteh1: Dosis, sans-serif;
+    --fontegeral: 'Open-sans', sans-serif;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;   
+    font-family: var(--fontegeral);
+    color: var(--cor5);
+}
+
+body{
+    margin: 0px;
+    background-color: var(--cor2);
+    
+}
+header{
+    text-align: center;
+    background-color: #333333 ;
+    margin: 0px;
+    padding: 1px;
+    min-width: 300px;
+    max-width: auto;
+    
+    
+}
+header > h1{
+    font-family: var(--fonteh1);
+    font-weight: 600;
+    color: #1087FF;
+    
+
+}
+nav{
+    padding: 5px;
+    background-color: #414141;
+    box-shadow: 0px 5px 0px var(--cor0);
+   
+    
+}
+nav>a{
+    text-decoration: none;
+    color: white;
+    min-width: 300px;
+    margin: 15px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition-duration: .5s;/*quando passar o mouse em cima do item do menu vai ter um tempo de transição */
+}
+
+#mundo{
+    color: white;
+}
+nav>a:hover{
+    background-color: #1087FF;
+    padding: 5px;
+    text-decoration: none;
+}
+main{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px auto 5px auto;
+    min-width: 320px;
+    max-width: 1200px;
+    box-shadow: 0px 0px 10px var(--cor5);
+    text-align: justify;
+
+   
+}
+article{    
+   margin-top: 20px;
+    margin-right: 100px;
+    margin-bottom: 5px;
+    margin-left: 100px;
+    padding: 10px;
+    min-width: 300px;
+   
+}
+.article_title{
+    color: var(--cor0);
+    font-family: var(--fonteh1);
+    font-size: 3em;
+    line-height: 1.2em;
+    font-weight: 700;
+    text-align: left;
+    padding: 0px;
+
+
+}
+
+.article_subtitle{
+    color: var(--cor5);
+    font-weight: lighter;
+    font-size: 1.25em;
+    padding: 0;
+    line-height: 1.75em;
+    text-align: left;
+}
+aside{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+article>p{
+    line-height: 1.5em;
+    text-align: justify;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+a{
+    color:var(--cor0);
+    text-decoration: none;
+    font-weight: 600;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.article_content{
+    margin: 0;
+    padding: 20px;
+}
+
+li{
+    color: black;
+    font-weight: 700;
+    font-size: 2em;
+
+}
+ol>p{
+    line-height: 1.5em;
+    text-align: justify;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+img{
+    display: block;
+    margin: 0px auto;
+    width: 600px;
+    max-width: 100%; 
+    
+}
+
+figcaption{
+    text-align: center;
+    margin: 0px auto;
+    padding: 8px;
+    color: var(--cor4);
+}
+
+
+.video{
+    position: relative; /*posicionamento. Por padrão temos o static, que mantém a hierarquia conforme estabelecido no documento HTML. O relative é usado para que seja considerado o posicionamento atual do elemento de divisão e que ele se mantenha adaptável para o caso de alteração no tamanho do navegador*/
+    background-color: var(--cor2);
+    padding: 20px 50px 400px 50px;
+    margin: 0px 15px 30px 15px;
+    
+}
+.video iframe{
+    position: absolute; /*comando para definir a posição exata da tag*/
+    top: 5% ;
+    left: 5% ;/*consigo controlar a posição do iframe do video dessa forma, sendo que essa medida é a distancia do video até a borda da div*/
+    width: 90%;
+    height: 90%;
+
+}
+
+footer{
+    
+    text-align: center;
+    background-color: #333333;
+    margin: auto;
+    padding: 5px;
+    font-size: 0.8em;
+    
+}
+footer p{    
+    color: white;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #1087FF;
+}
