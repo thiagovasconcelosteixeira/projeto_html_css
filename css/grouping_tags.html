@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+       body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgreen;
+            margin: 0px;
+        }
+        header{
+            width: auto;
+            background-color: blue;
+            padding: 1px;
+            margin: 0px;
+            color: white;
+        }
+        main{
+            background-color: blue;
+            padding: 10px;
+            margin: 10px;
+            color: white;
+            border-radius: 10px 10px 10px 10px;/*exemplo de borda arredondada*/
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.349); /*a sombra vai ficar com o formato de borda arredonda também*/
+        }
+        section#noticias>article{
+            border-radius: 10px 10px 10px 10px;
+
+        }
+        footer{
+            background-color: darkgray;
+            text-align: center;
+            padding: 3px;
+            margin: 0px;
+        }
+        
+        article{
+            background-color:lightcoral;
+            padding: 10px;
+
+        }
+        article > aside{
+            background-color: black;
+        }
+        nav{
+            background-color: darkgreen;
+            padding: 10px;
+            box-shadow: 1px 1px 1px black; /* deslocamento horizontal, deslocamento vertical, espalhamento e sombra*/
+            
+            
+        }
+        nav > a{ color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            background-color: darkblue;
+            padding: 10px;
+
+
+        }
+        footer > p{
+            margin: 0px;
+        }
+        div#circulo{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%; /* so para deixar marcado que é possivel fazer uma div inteira no formato arredondado*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site</h1>
+        <nav>
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            <a href="#">Link4</a>
+        </nav><!--tag semnatica para navegação ou seja menu.Define uma área que possui os links de navegação pela estrutura de páginas que vão compor o website.-->
+
+    </header><!--cabeçalho.Normalmente inclui títulos <h1> - <h6> e subtítulos. Podem também conter menus e navegação-->
+    <main>
+        <section id="assuntos">
+            <h2>Esporte Política Tecnologia</h2>
+            
+        </section><!--Cria seções para sua página. Ela pode conter o conteúdo diretamente no seu corpo ou dividir os conteúdos em artigos com conteúdos específicos. -->
+        <section id="noticias">
+
+            <article>
+                <h2>Noticias sobre Esporte</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi ex reprehenderit excepturi veritatis, ullam iste quasi? Quos perspiciatis nobis vel voluptatem! Adipisci inventore dolorum impedit voluptatibus sunt animi nisi minus.</p>
+                <aside>
+                    <p>Artigo escrito por Zezinho</p>
+                </aside><!--Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção. Normalmente um conteúdo <aside> está posicionado ao lado de um determinado texto ou até mesmo no meio dele, exatamente como fizemos no bloco de texto apresentado anteriormente, falando sobre “MÚLTIPLOS NÍVEIS”-->
+            </article><!--Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma independente e dizem respeito a um mesmo assunto. Podemos usar um <article> para delimitar um post de blog ou fórum, uma notícia, etc.-->
+
+        </section>
+
+    </main><!--É um agrupador usado para delimitar o conteúdo principal do nosso site. Normalmente concentra as seções, artigos e conteúdos periféricos. -->
+
+    <footer>
+        <p>Produzido por Thiago Vasconcelos</p>
+    </footer><!--Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte diretamente do conteúdo nem é um conteúdo periférico, mas possui informações sobre autoria do conteúdo, links adicionais, mapa  do site, documentos relacionados-->
+    <div id="circulo">
+
+    </div>
+</body>
+</html>
