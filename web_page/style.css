@@ -84,9 +84,9 @@ main{
 }
 article{    
    margin-top: 20px;
-    margin-right: 100px;
+    margin-right: 15px;
     margin-bottom: 5px;
-    margin-left: 100px;
+    margin-left: 15px;
     padding: 10px;
     min-width: 300px;
    
@@ -168,9 +168,10 @@ figcaption{
 
 .video{
     position: relative; /*posicionamento. Por padrão temos o static, que mantém a hierarquia conforme estabelecido no documento HTML. O relative é usado para que seja considerado o posicionamento atual do elemento de divisão e que ele se mantenha adaptável para o caso de alteração no tamanho do navegador*/
-    background-color: var(--cor2);
-    padding: 20px 50px 400px 50px;
+    padding: 20px 40px 400px 40px;
     margin: 0px 15px 30px 15px;
+    min-width: 300px;
+    max-width: 90%;
     
 }
 .video iframe{
@@ -179,6 +180,8 @@ figcaption{
     left: 5% ;/*consigo controlar a posição do iframe do video dessa forma, sendo que essa medida é a distancia do video até a borda da div*/
     width: 90%;
     height: 90%;
+    min-width: 300px;
+    max-width: 90%;
 
 }
 
